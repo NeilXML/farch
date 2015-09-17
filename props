@@ -1,0 +1,29 @@
+############### User parms ################
+#
+# directory where files reside.
+filePath = /tmp/t t/
+#
+# file regex to include or not in the zip
+# Example my $fileRegex = ^amepat-rec-[0-9]{8}-[0-9]{4} ;
+fileRegex = ^amepat-rec-[0-9]{8}-[0-9]{4}
+#
+# how old in days files are before been archived.
+fileOlderThanDays = 1
+#
+# What is the Archive file name going to start
+# with assuming it will end in YYYYMM.zip
+archivePrefix = /export/archive/PR_arch
+#
+# Set to 1 if files are not to be deleted or dryRun.
+# Files will still be archived and re-archived
+dryRun = 1
+#
+# How many archive zip files do you want to keep, older ones will be removed
+removeArchivesOlderThanDays = 0
+#
+# Leave at least xx of the latest files unarchived and also leave it's month archive there for when it does eventually get archived.
+minimumUnArchived = 30
+#
+# Do not actually archive files just delete when meet retentions rule.
+noArchiveDeleteOnly = false
+######## End of User parms ################
